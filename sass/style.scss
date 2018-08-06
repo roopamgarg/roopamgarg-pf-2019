@@ -22,7 +22,8 @@ html{
     }
 }
 .header{
-   background:linear-gradient(to right ,rgba(#fff,0.8),rgba(#fff,0.5)) ,url('../img/bg-m-4.jpeg') center center fixed;
+    background:  #ece9e6;
+   background:  linear-gradient(to right,rgba( #ece9e6,0.8),rgba( #ffffff,0.9)) ,url('../img/bg-m-4.jpeg') center center fixed;
   
    background-size: cover;
 
@@ -31,7 +32,10 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    @media (max-width:768px) {
+   background:linear-gradient(to bottom,rgba( #ece9e6,0.9),rgba( #ffffff,0.9))  ,url('../img/bg-s.jpeg') center center fixed;
+   background-size: cover;
+    }
     &__heading{
       background: rgba(black,1);
       box-shadow: 0.5rem 1rem 4rem rgba(#000,0.2);
@@ -85,7 +89,10 @@ html{
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
-
+        @media (max-width:768px) {
+            top: 3rem;
+        right: 3rem;
+        }
        
     }
 
@@ -99,6 +106,11 @@ html{
         background-image: radial-gradient(rgba($color-primary-light,1), rgba($color-primary,1));
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        @media (max-width:768px) {
+            top: 3.2rem;
+        right: 3.2rem;
+        }
+        
 
     }
 
@@ -361,8 +373,10 @@ clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
            img{
                 height: 15rem;
                 @media (max-width:768px){
-                    height: 20rem;
+                    height: 25rem;
                 }
+                
+
            }
         }
         &__image__layer{

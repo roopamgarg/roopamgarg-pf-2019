@@ -25,8 +25,9 @@ html section {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("../img/bg-m-4.jpeg") center center fixed;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("../img/bg-m-4.jpeg") center center fixed;
+  background: #ece9e6;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(236, 233, 230, 0.8)), to(rgba(255, 255, 255, 0.9))), url("../img/bg-m-4.jpeg") center center fixed;
+  background: linear-gradient(to right, rgba(236, 233, 230, 0.8), rgba(255, 255, 255, 0.9)), url("../img/bg-m-4.jpeg") center center fixed;
   background-size: cover;
   height: 100vh;
   -webkit-transition: all .2s;
@@ -40,6 +41,14 @@ html section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 233, 230, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../img/bg-s.jpeg") center center fixed;
+    background: linear-gradient(to bottom, rgba(236, 233, 230, 0.9), rgba(255, 255, 255, 0.9)), url("../img/bg-s.jpeg") center center fixed;
+    background-size: cover;
+  }
 }
 
 .header__heading {
@@ -94,6 +103,13 @@ html section {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
 .navigation__background {
   height: 4rem;
   width: 4rem;
@@ -107,6 +123,13 @@ html section {
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media (max-width: 768px) {
+  .navigation__background {
+    top: 3.2rem;
+    right: 3.2rem;
+  }
 }
 
 .navigation__nav {
@@ -440,7 +463,7 @@ html section {
 
 @media (max-width: 768px) {
   .projects__list__image img {
-    height: 20rem;
+    height: 25rem;
   }
 }
 
