@@ -1,5 +1,5 @@
-$color-primary:#0072ff;
-$color-primary-light:#00c6ff;
+$color-primary:#2948ff;
+$color-primary-light:#396afc;
 $color-white:#f7f7f7;
 $color-black:#000;
 
@@ -23,26 +23,27 @@ html{
 }
 .header{
     background:  #ece9e6;
-   background:  linear-gradient(to right,rgba( #ece9e6,0.8),rgba( #ffffff,0.9)) ,url('../img/bg-m-4.jpeg') center center fixed;
-  
+   background:  linear-gradient(to right,rgba( $color-primary,.6),rgba($color-primary-light,0.8)) ,url('../img/bg-m-4.jpg') center center fixed;
+  margin: 8vh 0 8vh 0;
    background-size: cover;
 
-    height: 100vh;
+    height: 84vh;
     transition: all .2s;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (max-width:768px) {
-   background:linear-gradient(to bottom,rgba( #ece9e6,0.9),rgba( #ffffff,0.9))  ,url('../img/bg-s.jpeg') center center fixed;
+   background:linear-gradient(to right,rgba( $color-primary,.6),rgba($color-primary-light,0.8))  ,url('../img/bg-s.jpeg') center center fixed;
    background-size: cover;
     }
     &__heading{
-      background: rgba(black,1);
-      box-shadow: 0.5rem 1rem 4rem rgba(#000,0.2);
+     // background: rgba(black,1);
+     // box-shadow: 0.5rem 1rem 4rem rgba(#000,0.2);
         
       padding: 1rem 2rem;
       color:white;
-      mix-blend-mode:multiply;
+     // mix-blend-mode:multiply;4
+
        font-size: 2rem;
        @media (max-width:768px) {
         font-size: 1.7rem;
@@ -51,14 +52,24 @@ html{
            text-transform: uppercase;
            
        }
+
+       &__work{
+           text-align: center;
+           font-size: 1rem;
+           letter-spacing: 1rem;
+           text-transform: uppercase;
+        
+
+       }
        &__name{
          
-        background: #00c6ff;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
+      //  background: #00c6ff;  /* fallback for old browsers */
+       // background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+      //  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      text-align: center;
+            font-size: 4.5rem;
            padding:0.2rem 0.5rem;
-           letter-spacing: 0.1rem;
+           letter-spacing: 1.5rem;
           
                animation: fadeIn 1s;
            
@@ -103,7 +114,7 @@ html{
         position: fixed;
         top: 4.2rem;
         right: 4.2rem;
-        background-image: radial-gradient(rgba($color-primary-light,1), rgba($color-primary,1));
+        background-image: radial-gradient(rgba($color-primary-light,.9), rgba($color-primary,.9));
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         @media (max-width:768px) {

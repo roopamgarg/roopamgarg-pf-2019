@@ -26,10 +26,11 @@ html section {
 
 .header {
   background: #ece9e6;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(236, 233, 230, 0.8)), to(rgba(255, 255, 255, 0.9))), url("../img/bg-m-4.jpeg") center center fixed;
-  background: linear-gradient(to right, rgba(236, 233, 230, 0.8), rgba(255, 255, 255, 0.9)), url("../img/bg-m-4.jpeg") center center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(41, 72, 255, 0.6)), to(rgba(57, 106, 252, 0.8))), url("../img/bg-m-4.jpg") center center fixed;
+  background: linear-gradient(to right, rgba(41, 72, 255, 0.6), rgba(57, 106, 252, 0.8)), url("../img/bg-m-4.jpg") center center fixed;
+  margin: 8vh 0 8vh 0;
   background-size: cover;
-  height: 100vh;
+  height: 84vh;
   -webkit-transition: all .2s;
   transition: all .2s;
   display: -webkit-box;
@@ -45,19 +46,15 @@ html section {
 
 @media (max-width: 768px) {
   .header {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 233, 230, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../img/bg-s.jpeg") center center fixed;
-    background: linear-gradient(to bottom, rgba(236, 233, 230, 0.9), rgba(255, 255, 255, 0.9)), url("../img/bg-s.jpeg") center center fixed;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(41, 72, 255, 0.6)), to(rgba(57, 106, 252, 0.8))), url("../img/bg-s.jpeg") center center fixed;
+    background: linear-gradient(to right, rgba(41, 72, 255, 0.6), rgba(57, 106, 252, 0.8)), url("../img/bg-s.jpeg") center center fixed;
     background-size: cover;
   }
 }
 
 .header__heading {
-  background: black;
-  -webkit-box-shadow: 0.5rem 1rem 4rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0.5rem 1rem 4rem rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
   color: white;
-  mix-blend-mode: multiply;
   font-size: 2rem;
 }
 
@@ -71,15 +68,18 @@ html section {
   text-transform: uppercase;
 }
 
+.header__heading__work {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
 .header__heading__name {
-  background: #00c6ff;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00c6ff));
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  font-size: 4.5rem;
   padding: 0.2rem 0.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.5rem;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
@@ -117,7 +117,7 @@ html section {
   position: fixed;
   top: 4.2rem;
   right: 4.2rem;
-  background-image: radial-gradient(#00c6ff, #0072ff);
+  background-image: radial-gradient(rgba(57, 106, 252, 0.9), rgba(41, 72, 255, 0.9));
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -180,7 +180,7 @@ html section {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #0072ff;
+  color: #2948ff;
   -webkit-transform: translateX(0.6rem);
           transform: translateX(0.6rem);
 }
@@ -697,7 +697,7 @@ html section {
 }
 
 a {
-  color: #0072ff;
+  color: #2948ff;
   text-decoration: none;
 }
 
