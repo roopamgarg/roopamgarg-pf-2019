@@ -22,6 +22,7 @@ html{
     }
 }
 .header{
+    font-family: 'times new roman',sans-serif;
     background:  #ece9e6;
    background:  linear-gradient(to right,rgba( $color-primary,.6),rgba($color-primary-light,0.8)) ,url('../img/bg-m-4.jpg') center center fixed;
   margin: 8vh 0 8vh 0;
@@ -33,6 +34,8 @@ html{
     justify-content: center;
     align-items: center;
     @media (max-width:768px) {
+    height: 100vh;
+    margin :0;
    background:linear-gradient(to right,rgba( $color-primary,.6),rgba($color-primary-light,0.8))  ,url('../img/bg-s.jpeg') center center fixed;
    background-size: cover;
     }
@@ -58,7 +61,7 @@ html{
            font-size: 1rem;
            letter-spacing: 1rem;
            text-transform: uppercase;
-        
+           color:$color-white;
 
        }
        &__name{
@@ -70,7 +73,7 @@ html{
             font-size: 4.5rem;
            padding:0.2rem 0.5rem;
            letter-spacing: 1.5rem;
-          
+      
                animation: fadeIn 1s;
            
          
@@ -531,6 +534,14 @@ border:none;
     }
 }
 
+.contact{
+    text-align: center;
+           font-size: 1rem;
+           letter-spacing: .5rem;
+           text-transform: uppercase;
+           color:$color-white;
+}
+
 .bg-white{
     background: #fff;
     padding-bottom: 3rem;
@@ -567,12 +578,4 @@ border:none;
     }
   }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}

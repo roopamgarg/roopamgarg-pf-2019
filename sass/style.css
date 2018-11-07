@@ -25,6 +25,7 @@ html section {
 }
 
 .header {
+  font-family: 'times new roman',sans-serif;
   background: #ece9e6;
   background: -webkit-gradient(linear, left top, right top, from(rgba(41, 72, 255, 0.6)), to(rgba(57, 106, 252, 0.8))), url("../img/bg-m-4.jpg") center center fixed;
   background: linear-gradient(to right, rgba(41, 72, 255, 0.6), rgba(57, 106, 252, 0.8)), url("../img/bg-m-4.jpg") center center fixed;
@@ -46,6 +47,8 @@ html section {
 
 @media (max-width: 768px) {
   .header {
+    height: 100vh;
+    margin: 0;
     background: -webkit-gradient(linear, left top, right top, from(rgba(41, 72, 255, 0.6)), to(rgba(57, 106, 252, 0.8))), url("../img/bg-s.jpeg") center center fixed;
     background: linear-gradient(to right, rgba(41, 72, 255, 0.6), rgba(57, 106, 252, 0.8)), url("../img/bg-s.jpeg") center center fixed;
     background-size: cover;
@@ -73,6 +76,7 @@ html section {
   font-size: 1rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
+  color: #f7f7f7;
 }
 
 .header__heading__name {
@@ -653,6 +657,14 @@ html section {
           box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
 
+.contact {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
 .bg-white {
   background: #fff;
   padding-bottom: 3rem;
@@ -722,24 +734,6 @@ a {
   to {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
